@@ -2,7 +2,5 @@
 
 ## Getting Started
 To run the project locally follow the steps:
-1. Run: 
-``pip install -r requirements.txt``
-2. Change postgresql settings in ``settings.py`` inside the ``backend/`` folder
-3. cd to backend folder and run ``python manage.py makemigrations`` and ``python manage.py migrate``
+1. Start the containers: 
+``docker compose up``
