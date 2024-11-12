@@ -1,8 +1,8 @@
 once copied:
-1. Run: ```bash 
+1. Run: ```console 
 pip install -r requirements.txt
 ```
-2. Change postgresql settings in "settings.py" inside the ```backend/``` folder
-3. cd to backend folder and run ```bash
-python manage.py makemigrations``` and ```bash 
+2. Change postgresql settings in "settings.py" inside the ```console backend/``` folder
+3. cd to backend folder and run ```console
+python manage.py makemigrations``` and ```console 
 python manage.py migrate```
