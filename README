@@ -1,0 +1,6 @@
+# Arbashop
+
+## Getting Started
+To run the project locally follow the steps:
+1. Start the containers: 
+``docker compose up``

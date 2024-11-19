@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    working_dir: /app/backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - DB_NAME=db
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_HOST=swe_db
+    depends_on:
+      - swe_db
+  swe_db:
+    container_name: postgres_swe
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
